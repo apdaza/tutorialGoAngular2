@@ -1,0 +1,26 @@
+<div class="jumbotron text-center">
+  <h2>{{ title }}</h2>
+  <hr>
+  <p>{{ message }}</p>
+
+  <table id="table" class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Celular</th>
+        <th>Mail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="d in data">
+        <td>{{d.id}}</td>
+        <td>{{d.nombre}}</td>
+        <td>{{d.apellido}}</td>
+        <td>{{d.celular}}</td>
+        <td>{{d.mail}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

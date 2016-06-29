@@ -1,0 +1,36 @@
+{
+    "menu": {
+        "opciones": [
+            {
+                "id": "1",
+                "text": "Contactos",
+                "url": "#",
+                "subopciones": [
+                  {
+                    "text": "Listar",
+                    "url": "#/listarContactos"
+                  },
+                  {
+                    "text": "Agregar",
+                    "url": "#/agregarContacto"
+                  }
+                ]
+            },
+            {
+              "id": "2",
+              "text": "Opciones",
+                "url": "#",
+                "subopciones": [
+                  {
+                    "text": "inicio",
+                    "url": "#/home"
+                  },
+                  {
+                    "text": "Acerca de",
+                    "url": "#/about"
+                  }
+                ]
+            }
+        ]
+    }
+}

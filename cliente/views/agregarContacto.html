@@ -1,0 +1,29 @@
+<div class="jumbotron text-center">
+  <h2>{{ title }}</h2>
+  <hr>
+  <p>{{ message }}</p>
+  <div ng-controller="addContactoController" class="text-center">
+    <form name="contactoForm">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input name="nombre" type="text" ng-model="contacto.nombre"/>
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input name="apellido" type="text" ng-model="contacto.apellido"/>
+      </div>
+      <div class="form-group">
+        <label for="celular">Celular:</label>
+        <input name="celular" type="text" ng-model="contacto.celular"/>
+      </div>
+      <div class="form-group">
+        <label for="mail">Mail:</label>
+        <input name="mail" type="text" ng-model="contacto.mail"/>
+      </div>
+
+      <input type="reset" ng-click="reset()" value="Limpiar" />
+      <input type="submit" ng-click="add()" value="Guardar"/>
+    </form>
+    <pre>Contacto = {{contacto | json}}</pre>
+  </div>
+</div>
